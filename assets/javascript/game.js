@@ -82,7 +82,7 @@ $(document).on("click", ".crystal", function() {
         console.log("You Lost");
         $("#lost").html(lost);
         previous = 0;
-        alert("You were killed by the Count and he feasts on your corpse. Ah Ah Ah.");
+        alert("This loss is brought to you by the letter L. You displeased the count and he now feasts on your corpse. Ah Ah Ah.");
         resetAndStart();
     }
 
