@@ -23,7 +23,7 @@ var resetAndStart = function() {
             random_result = Math.floor(Math.random() * 101) + 19;
             console.log(random_result);
 
-            $("#result").html("Count to this number : " + random_result);
+            $("#result").html("COUNT to this number : " + random_result);
 
 
             // for loop. the number here determines the number of crystal divs generated.
@@ -47,7 +47,7 @@ var resetAndStart = function() {
 
 
                     // This shows the crystal's value while coding to make things easier. Comment out after.
-                    crystal.html(random);
+                    // crystal.html(random);
 
                 $(".crystals").append(crystal);
             }
@@ -82,6 +82,7 @@ $(document).on("click", ".crystal", function() {
         console.log("You Lost");
         $("#lost").html(lost);
         previous = 0;
+        alert("You were killed by the Count and he feasts on your corpse. Ah Ah Ah.");
         resetAndStart();
     }
 
@@ -90,6 +91,7 @@ $(document).on("click", ".crystal", function() {
         console.log("You Win");
         $("#win").html(win);
         previous = 0;
+        alert("You outsmarted the Count? Only a stable genius by the name of Gary could have pulled this off. You live to count another day in this hellscape the Count has trapped you in using his Transylvanian blood magic.");
         resetAndStart();
     }
 
