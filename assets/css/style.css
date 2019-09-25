@@ -4,12 +4,33 @@
 .crystals{
     display: flex;
     justify-content: space-around;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     align-items: center;
 }
 
 .crystal{
-    border: 5px solid green;
+    /* border: 5px solid green; */
     height: 200px;
     width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    box-shadow: 5px 5px 5px darkmagenta;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+body{
+    font-family: "Mansalva", cursive;
+}
+
+.numbers{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#previous{
+    color: purple;
+    text-shadow: 20px 10px 4px #aaa;
 }
